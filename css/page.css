@@ -1,0 +1,303 @@
+/*===========================
+=            FPO            =
+===========================*/
+.nf-feature .category-feature-subhead {
+  color: #A42F26; }
+.nf-feature .category-feature-headline {
+  color: #A42F26; }
+.nf-feature a.category-shop-btn {
+  color: #A42F26;
+  border-color: #A42F26; }
+.nf-feature .category-feature-image {
+  background-image: url(../images/category-story-test.jpg); }
+
+.green-feature .category-feature-subhead {
+  color: #8bac96; }
+.green-feature .category-feature-headline {
+  color: #8bac96; }
+.green-feature a.category-shop-btn {
+  color: #8bac96;
+  border-color: #8bac96; }
+.green-feature .category-feature-image {
+  background-image: url(../images/category-story-green.jpg); }
+
+.leila-feature .category-feature-subhead {
+  color: #f45200; }
+.leila-feature .category-feature-headline {
+  color: #f45200; }
+.leila-feature a.category-shop-btn {
+  color: #f45200;
+  border-color: #f45200; }
+.leila-feature .category-feature-image {
+  background-image: url(../images/category-story-leila.jpg); }
+
+body {
+  background-color: #fff;
+  font-family: "franklin-gothic-urw-cond", "gnuolane", Helvetica, san-serif;
+  padding: 0px;
+  padding: 0px; }
+
+.category-row-full-width {
+  max-width: 100%; }
+
+.category-full-width {
+  width: 100%;
+  position: relative; }
+
+.category-hero {
+  background-image: url(../images/category-hero-test.jpg);
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%; }
+  @media (max-width: 768px) {
+    .category-hero {
+      position: relative;
+      height: 350px; } }
+
+.category-hero-text-container {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  overflow: hidden; }
+  @media (max-width: 768px) {
+    .category-hero-text-container {
+      background-color: #000;
+      position: relative;
+      height: inherit; }
+      .category-hero-text-container .category-hero-headline {
+        font-size: 48px;
+        padding: 15px 0px; }
+      .category-hero-text-container .category-hero-subhead {
+        font-size: 18px;
+        margin-top: -5px; } }
+
+.category-hero-row {
+  max-width: 1400px; }
+
+.category-hero-headline {
+  color: #000;
+  font-size: 64px;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.category-hero-subhead {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.category-hero-white {
+  color: #fff;
+  text-shadow: 1px 1px #000; }
+
+.category-hero-button-container {
+  margin-top: 15px; }
+  @media (max-width: 768px) {
+    .category-hero-button-container {
+      margin-top: 30px; } }
+
+a.category-shop-btn {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 2px solid #fff;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: none; }
+  a.category-shop-btn:hover {
+    background-color: #000;
+    border: 2px solid #000; }
+  a.category-shop-btn.learn-btn {
+    background-color: #b90000;
+    border: 1px solid #b90000; }
+    a.category-shop-btn.learn-btn:hover {
+      background-color: #000;
+      border: 1px solid #000; }
+
+.category-subnav-container {
+  padding-top: 515px; }
+  @media (max-width: 768px) {
+    .category-subnav-container {
+      padding-top: 15px; } }
+
+.category-subnav {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+  position: relative; }
+
+.category-product-container {
+  padding: 25px 15px; }
+
+.category-product-carousel a.category-shop-btn {
+  padding: 15px 0px;
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  font-size: 18px; }
+  .category-product-carousel a.category-shop-btn:hover {
+    background-color: #000;
+    color: #fff; }
+  @media (max-width: 768px) {
+    .category-product-carousel a.category-shop-btn {
+      background-color: #b90000;
+      color: #fff;
+      border-color: #b90000; }
+      .category-product-carousel a.category-shop-btn:hover {
+        background-color: #000;
+        border-color: #000; } }
+
+.category-header-row {
+  max-width: 450px;
+  margin-bottom: 15px; }
+
+.category-header-subhead-row {
+  max-width: 200px;
+  margin-top: 15px; }
+
+.category-header-subhead-line {
+  height: 1px;
+  border-bottom: 1px solid #b90000;
+  width: 100%;
+  margin-top: 15%; }
+
+.category-header-subhead {
+  text-align: center;
+  color: #b90000;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+.category-header-headline {
+  font-size: 48px;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase; }
+  @media (max-width: 768px) {
+    .category-header-headline {
+      font-size: 40px; } }
+
+.category-header-copy {
+  text-align: center;
+  line-height: 22px; }
+
+.category-feature-row {
+  max-width: 1400px; }
+  @media (max-width: 768px) {
+    .category-feature-row {
+      position: relative; } }
+
+.category-feature-container {
+  background-color: #ccc;
+  width: 100%;
+  padding: 25px 0px;
+  background-image: url(../images/category-paper-background.jpg);
+  background-position: center top; }
+
+.category-feature {
+  margin-bottom: 20px;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  min-height: 350px; }
+  .category-feature:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease; }
+    .category-feature:hover .category-feature-image {
+      -webkit-filter: contrast(120%);
+      /* Chrome, Safari, Opera */
+      filter: contrast(120%);
+      transition: all 0.5s ease; }
+  .category-feature.black {
+    background-color: #000; }
+    .category-feature.black .category-feature-copy {
+      color: #fff; }
+    .category-feature.black a.category-shop-btn {
+      background-color: #000; }
+      .category-feature.black a.category-shop-btn:hover.category-shop-btn {
+        border-color: #fff;
+        background-color: #fff;
+        color: #000; }
+  .category-feature.white {
+    background-color: #fff; }
+    .category-feature.white .category-feature-copy {
+      color: #000; }
+    .category-feature.white a.category-shop-btn {
+      background-color: #fff; }
+      .category-feature.white a.category-shop-btn:hover.category-shop-btn {
+        border-color: #000;
+        background-color: #000;
+        color: #fff; }
+
+.category-feature-copy-container {
+  padding: 30px 60px; }
+  @media (max-width: 768px) {
+    .category-feature-copy-container {
+      text-align: center;
+      padding: 15px 10px; } }
+
+.category-feature-subhead {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff; }
+
+.category-feature-headline {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #fff; }
+  @media (max-width: 768px) {
+    .category-feature-headline {
+      font-size: 40px; } }
+
+.category-feature-copy {
+  color: #fff;
+  line-height: 22px; }
+
+.category-feature-image {
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 350px;
+  background-position: top center;
+  transition: all 0.5s ease;
+  -webkit-filter: contrast(100%);
+  /* Chrome, Safari, Opera */
+  filter: contrast(100%); }
+
+.category-feature-button-container {
+  margin-top: 45px; }
+  @media (max-width: 768px) {
+    .category-feature-button-container {
+      margin-top: 15px; } }
+
+.category-feature-small .category-feature-image {
+  min-height: 200px; }
+.category-feature-small .category-feature-headline, .category-feature-small .category-feature-subhead, .category-feature-small .category-feature-copy {
+  text-align: center; }
+.category-feature-small .category-feature-copy-container {
+  padding: 15px 10px; }
+.category-feature-small .category-feature-button-container {
+  margin-top: 15px; }
