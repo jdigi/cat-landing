@@ -1,0 +1,48 @@
+{
+  "devDependencies": {
+    "beepbeep": "^1.2.0",
+    "browser-sync": "^2.8.2",
+    "del": "^1.1.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-csslint": "^0.3.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-data": "^1",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-gulp": "^0",
+    "gulp-if": "^2.0.0",
+    "gulp-if-else": "^1.0.3",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.7",
+    "jquery": "1.11.3",
+    "run-sequence": "^1.0.2",
+    "yargs": "^3",
+    "yo": "^1.7.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "directories": {
+    "archive": "archive",
+    "dist": "dist",
+    "src": "src",
+    "test": "test"
+  },
+  "homepage": "https://html5boilerplate.com/",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt"
+  },
+  "name": "html5-boilerplate",
+  "private": true,
+  "scripts": {
+    "webm": "ffmpeg -i veps.mov -s 1280x720 -c:v libvpx -preset slow -an -b:v 1000K veps.webm",
+    "mp4": "ffmpeg -i veps.mov -s 1280x720 -c:v libx264 -preset slow -an -b:v 1000K veps.mp4"
+  },
+  "version": "5.2.0"
+}
