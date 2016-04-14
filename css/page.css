@@ -76,17 +76,20 @@ body {
   width: 100%;
   position: relative; }
 
+header {
+  margin-bottom: 15px; }
+
 .category-hero {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
   background-image: url(../images/category-hero-test.jpg);
   background-size: cover;
   background-position: top center;
@@ -196,17 +199,11 @@ a.category-shop-btn {
 /*------------------------------------*
    $CATEGORY SUBNAV
 *------------------------------------*/
-.category-subnav-container {
-  padding-top: 15px; }
-  @media only screen and (max-width: 768px) {
-    .category-subnav-container {
-      padding-top: 15px; } }
-
 .category-subnav {
-  height: 50px;
+  height: 66px;
+  padding-top: 5px;
   position: relative;
-  background: none;
-  transition: all 0.25s ease; }
+  background: rgba(255, 255, 255, 0); }
   .category-subnav nav {
     height: 100%;
     z-index: 100;
@@ -254,6 +251,8 @@ a.category-shop-btn {
 
 @media screen and (min-width: 1025px) {
   .category-subnav {
+    height: 50px;
+    padding-top: inherit;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc; }
     .category-subnav nav ul {
@@ -268,12 +267,18 @@ a.category-shop-btn {
         flex-basis: auto; }
         .category-subnav nav ul li:first-of-type {
           border-top: none; } }
-.category-subnav-scrolled {
+
+.category-subnav.category-subnav-scrolled {
   background: white;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  top: -50px;
+  transform: translateY(50px);
+  transition: transform 500ms ease,background 500ms ease;
+  -webkit-transition: transform 500ms ease,background 500ms ease;
+  -moz-transition: transform 500ms ease,background 500ms ease; }
 
 .mobile-btn {
   width: 95%;
@@ -283,7 +288,7 @@ a.category-shop-btn {
   font-size: 1em;
   text-align: center;
   background: #b90000;
-  padding: 0.5em 1em;
+  padding: 0.75em 1em;
   position: relative;
   color: #fff;
   text-transform: uppercase;

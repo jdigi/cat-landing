@@ -18,8 +18,8 @@
   <!-- Start Category Hero -->
   <header>
 	  <div class="category-full-width category-hero-container">
-	    <div class="category-hero" data-100-start="height:150px; background-size:110%;" data-start="height:500px; background-size:100%;"></div>
-	    <div class="category-hero-text-container" data-100-start="height:150px" data-start="height:500px;">
+	    <div class="category-hero" data--100-top="height:150px;" data-top="height:500px;"></div>
+	    <div class="category-hero-text-container" data--100-top="height:150px" data-top="height:500px;">
 	      <div class="row category-hero-row category-hero-left">
 	        <div class="large-6 columns">
 	          <div class="category-hero-headline category-hero-white">
@@ -29,7 +29,7 @@
 	            This is where the subheadline will go
 	          </div>
 	          <div class="row collapsed">
-	            <div class="small-10 small-centered large-8 large-centered columns">
+	            <div class="small-10 small-centered medium-8 medium-centered large-8 large-centered columns">
 	              <div class="row collapsed">
 	                <div class="category-hero-button-container">
 	                  <div class="small-6 columns">
@@ -925,10 +925,13 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/vendor/skrollr.min.js"></script> 
   <script>
-    // initialize skrollr
-    // var s = skrollr.init();
-
 		$(function() {
+
+    // initialize skrollr
+    // activate skrollr only on screens larger than 1024px
+    if ( $(window).width() > 1024 ) {
+    	var s = skrollr.init();
+  	}
 
 		// function to TRANSFORM HEADER
 		// var shrinkHeader = 100;
@@ -945,27 +948,41 @@
 		//   return window.pageYOffset || document.documentElement.scrollTop;
 		//  };
 
-		// FIXED NAV js
+		// FIXED NAV
+		// adding class to subnav based on header height and window width
 		var  sn = $(".category-subnav");
     sns = "category-subnav-scrolled";
-    hdr = $('header').height();
+    hdr = $('.category-hero-container').height() + 50;
     // hdrTotal = $('.category-hero').height() + $('.category-hero-text-container').height();
 
-		$(window).scroll(function() {
-		  if( $(this).scrollTop() > hdr ) {
-		    sn.addClass(sns);
-		    $('.product-section').css('padding-top','50px');
-		  } else {
-		    sn.removeClass(sns);
-		    $('.product-section').css('padding-top','0');
-		  }
-		});
+    if ( $(window).width() < 1025 ) {
+			$(window).scroll(function() {
+			  if( $(this).scrollTop() > hdr ) {
+			    sn.addClass(sns);
+			    $('.product-section').css('padding-top','50px');
+			  } else {
+			    sn.removeClass(sns);
+			    $('.product-section').css('padding-top','0');
+			  }
+			});
+		}
 
+    if ( $(window).width() > 1024 ) {
+			$(window).scroll(function() {
+			  if( $(this).scrollTop() > 185 ) {
+			    sn.addClass(sns);
+			    $('.product-section').css('padding-top','50px');
+			  } else {
+			    sn.removeClass(sns);
+			    $('.product-section').css('padding-top','0');
+			  }
+			});
+		}
 
-		// using css media query to trigger mobile nav js
+		// using css media query to trigger MOBILE NAV js
 		if ($('.js-media-query').css("float") === "none") {
 			$('.mobile-btn').click(function() {
-				$('.category-subnav ul').slideToggle(500);
+				$('.category-subnav ul').slideToggle(250);
 			});
 		};
 	
