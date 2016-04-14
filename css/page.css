@@ -18,40 +18,31 @@ body {
 *------------------------------------*/
 .nf-feature .category-feature-subhead {
   color: #A42F26; }
-
 .nf-feature .category-feature-headline {
   color: #A42F26; }
-
 .nf-feature a.category-shop-btn {
   color: #A42F26;
   border-color: #A42F26; }
-
 .nf-feature .category-feature-image {
   background-image: url(../images/category-story-test.jpg); }
 
 .green-feature .category-feature-subhead {
   color: #8bac96; }
-
 .green-feature .category-feature-headline {
   color: #8bac96; }
-
 .green-feature a.category-shop-btn {
   color: #8bac96;
   border-color: #8bac96; }
-
 .green-feature .category-feature-image {
   background-image: url(../images/category-story-green.jpg); }
 
 .leila-feature .category-feature-subhead {
   color: #f45200; }
-
 .leila-feature .category-feature-headline {
   color: #f45200; }
-
 .leila-feature a.category-shop-btn {
   color: #f45200;
   border-color: #f45200; }
-
 .leila-feature .category-feature-image {
   background-image: url(../images/category-story-leila.jpg); }
 
@@ -216,7 +207,6 @@ a.category-shop-btn {
       .category-product-carousel a.category-shop-btn:hover {
         background-color: #000;
         border-color: #000; } }
-
 @media only screen and (min-width: 641px) {
   .category-product-carousel {
     margin-left: 1.65% !important;
@@ -431,12 +421,9 @@ a.category-shop-btn {
 
 .category-feature-small .category-feature-image {
   min-height: 200px; }
-
 .category-feature-small .category-feature-headline, .category-feature-small .category-feature-subhead, .category-feature-small .category-feature-copy {
   text-align: center; }
-
 .category-feature-small .category-feature-copy-container {
   padding: 15px 10px; }
-
 .category-feature-small .category-feature-button-container {
   margin-top: 15px; }
