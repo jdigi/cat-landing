@@ -16,43 +16,61 @@
 </head>
 <body>
   <!-- Start Category Hero -->
-  <div class="category-full-width category-hero-container">
-    <div class="category-hero" data-100-start="height:150px; background-size:110%;" data-start="height:500px; background-size:100%;"></div>
-    <div class="category-hero-text-container" data-100-start="height:150px" data-start="height:500px;">
-      <div class="row category-hero-row category-hero-left">
-        <div class="large-6 columns">
-          <div class="category-hero-headline category-hero-white">
-            This is the Headline test
-          </div>
-          <div class="category-hero-subhead category-hero-white">
-            This is where the subheadline will go
-          </div>
-          <div class="row collapsed">
-            <div class="small-10 small-centered large-8 large-centered columns">
-              <div class="row collapsed">
-                <div class="category-hero-button-container">
-                  <div class="small-6 columns">
-                    <a class="button expand category-shop-btn" href="#">Shop Now</a>
-                  </div>
-                  <div class="small-6 columns">
-                    <a class="button expand category-shop-btn learn-btn" href="#">Learn More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Category Hero -->
+  <header>
+	  <div class="category-full-width category-hero-container">
+	    <div class="category-hero" data-100-start="height:150px; background-size:110%;" data-start="height:500px; background-size:100%;"></div>
+	    <div class="category-hero-text-container" data-100-start="height:150px" data-start="height:500px;">
+	      <div class="row category-hero-row category-hero-left">
+	        <div class="large-6 columns">
+	          <div class="category-hero-headline category-hero-white">
+	            This is the Headline
+	          </div>
+	          <div class="category-hero-subhead category-hero-white">
+	            This is where the subheadline will go
+	          </div>
+	          <div class="row collapsed">
+	            <div class="small-10 small-centered large-8 large-centered columns">
+	              <div class="row collapsed">
+	                <div class="category-hero-button-container">
+	                  <div class="small-6 columns">
+	                    <a class="button expand category-shop-btn" href="#">Shop Now</a>
+	                  </div>
+	                  <div class="small-6 columns">
+	                    <a class="button expand category-shop-btn learn-btn" href="#">Learn More</a>
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+  </header><!-- End Category Hero -->
 
   <!-- Start Category Subnav -->
-  <div class="category-subnav-container" data-100-start="padding-top:170px;" data-start="padding-top:515px;">
-    <div class="category-full-width category-subnav"></div>
+  <div class="category-subnav-container">
+    <div class="category-full-width category-subnav">
+    	<nav>
+    		<div class="mobile-btn">
+    			<a>Pro Skate Menu</a>
+    			<img src="images/icon-menu.svg" alt="">
+    		</div>
+	      <ul>
+	        <li><a href="#">Shop Pro Skate</a></li>
+	        <li><a href="#">Shop Pro Classics</a></li>
+	        <li><a href="#">Shop By Silhouette</a></li>
+	        <li><a href="#">Men's Apparel</a></li>
+	        <li><a href="#">Featured Stories</a></li>
+	        <li><a href="#">News &amp; Team</a></li>
+	        <li class="btn-find-shop"><a href="#">Find A Shop</a></li>
+	      </ul>
+	    </nav>
+    </div>
   </div><!-- End Category Subnav -->
 
   <!-- START PRODUCT SECTION -->
-  <div class="category-full-width">
+  <div class="category-full-width product-section">
     <div class="category-product-container">
 
       <!-- START PRODUCT GRID 1 HEADER -->
@@ -86,7 +104,7 @@
 
       <!-- Start PRODUCT GRID 1 -->
       <div class="row category-hero-row">
-        <ul class="small-block-grid-1 medium-block-grid-5 large-block-grid-5">
+        <ul class="small-block-grid-1 medium-block-grid-4 large-block-grid-5 product-carousel-row">
           <li>
             <div class="category-product-carousel">
 							<div class="prod-carousel__item">
@@ -141,7 +159,7 @@
 							     <img src="http://s7d2.scene7.com/is/image/Vans/VHGY28-HEROC?$category-lg$" />
 							   </div>
 							  
-							   <ul class="product-carousel__thumb owl-carousel">
+							   <ul class="product-carousel__thumb owl-carousel product-carousel-row">
 							     <li>
 							       <a href="http://s7d2.scene7.com/is/image/Vans/VHGY28-HEROC?$category-lg$">
 							         <img src="http://s7d2.scene7.com/is/image/Vans/VHGY28-HEROC?$product-thumb$" alt="#" />
@@ -271,7 +289,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="remove-item">
             <div class="category-product-carousel">
 							<div class="prod-carousel__item">
 							   <div class="prod-carousel__big-img">
@@ -340,7 +358,7 @@
       </div><!-- End PRODUCT GRID 1 -->
 
       <div class="row category-hero-row">
-        <ul class="small-block-grid-1 medium-block-grid-5 large-block-grid-5">
+        <ul class="small-block-grid-1 medium-block-grid-4 large-block-grid-5 product-carousel-row">
           <li>
             <div class="category-product-carousel">
 							<div class="prod-carousel__item">
@@ -478,7 +496,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="remove-item">
             <div class="category-product-carousel">
 							<div class="prod-carousel__item">
 							   <div class="prod-carousel__big-img">
@@ -525,7 +543,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="shop-all-item">
             <div class="category-product-carousel" style="background-color:transparent;">
               <div class="row">
                 <div class="small-12 columns">
@@ -568,78 +586,6 @@
         </div>
       </div><!-- END PRODUCT GRID 2 HEADER -->
 
-      <!-- Start PRODUCT GRID 2 -->
-      <div class="row category-hero-row">
-        <ul class="small-block-grid-1 large-block-grid-5">
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-        </ul>
-      </div><!-- End PRODUCT GRID 2 -->
-
-      <!-- START PRODUCT GRID 3 -->
-
-      <!-- START PRODUCT GRID 3 HEADER -->
-      <div class="row category-header-subhead-row">
-        <div class="row collapse">
-          <div class="small-2 columns">
-            <div class="category-header-subhead-line"></div>
-          </div>
-          <div class="small-8 columns">
-            <div class="category-header-subhead">
-              New This Season
-            </div>
-          </div>
-          <div class="small-2 columns">
-            <div class="category-header-subhead-line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row category-header-row">
-        <div class="row">
-          <div class="category-header-headline">
-            Shop Boardshorts
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-11 small-centered large-10 large-centered columns">
-            <!-- <div class="category-header-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet leo leo, nec consequat ante commodo at. Sed tempor lacus eu nunc mollis, a sodales risus interdum.</div> -->
-          </div>
-        </div>
-      </div><!-- END PRODUCT GRID 3 HEADER -->
-
-      <!-- Start PRODUCT GRID 3 -->
-      <div class="row category-hero-row">
-        <ul class="small-block-grid-1 large-block-grid-5">
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-          <li>
-            <div class="category-product-carousel"><img src="images/category-product-carousel-test.jpg"></div>
-          </li>
-        </ul>
-      </div><!-- End PRODUCT GRID 3 -->
 
     </div>
   </div><!-- END PRODUCT SECTION -->
@@ -685,10 +631,10 @@
         <div class="row collapse">
           <div class="category-feature black nf-feature">
             <div class="row collapse category-row-full-width" data-equalizer="">
-              <div class="large-6 push-6 columns" data-equalizer-watch="">
-                <div class="category-feature-image"></div>
+              <div class="large-6 medium-6 push-6 full-width-768--push columns">
+                <div class="category-feature-image equal-columns" data-equalizer-watch=""></div>
               </div>
-              <div class="large-6 pull-6 columns" data-equalizer-watch="">
+              <div class="large-6 medium-6 pull-6 full-width-768--pull columns equal-columns" data-equalizer-watch="">
                 <div class="category-feature-copy-container">
                   <div class="row">
                     <div class="small-12 columns">
@@ -721,10 +667,10 @@
         <div class="row collapse">
           <div class="category-feature white leila-feature">
             <div class="row collapse category-row-full-width" data-equalizer="">
-              <div class="large-6 columns" data-equalizer-watch="">
+              <div class="large-6 medium-6 columns" data-equalizer-watch="">
                 <div class="category-feature-image"></div>
               </div>
-              <div class="large-6 columns" data-equalizer-watch="">
+              <div class="large-6 medium-6 columns" data-equalizer-watch="">
                 <div class="category-feature-copy-container">
                   <div class="row">
                     <div class="small-12 columns">
@@ -757,10 +703,10 @@
         <div class="row collapse">
           <div class="category-feature black green-feature">
             <div class="row collapse category-row-full-width" data-equalizer="">
-              <div class="large-6 push-6 columns" data-equalizer-watch="">
+              <div class="large-6 medium-6 push-6 columns" data-equalizer-watch="">
                 <div class="category-feature-image"></div>
               </div>
-              <div class="large-6 pull-6 columns" data-equalizer-watch="">
+              <div class="large-6 medium-6 pull-6 columns" data-equalizer-watch="">
                 <div class="category-feature-copy-container">
                   <div class="row">
                     <div class="small-12 columns">
@@ -875,6 +821,7 @@
     </div>
   </div><!-- End Category Featured Stories -->
 
+	<div class="js-media-query"></div>
 
   <script src="js/jquery.js"></script> 
   <script src="js/foundation.min.js"></script> 
@@ -884,29 +831,104 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/vendor/skrollr.min.js"></script> 
   <script>
-    // initialize foundation js
-    $(document).foundation();
-
     // initialize skrollr
     // var s = skrollr.init();
 
-
 		$(function() {
 
-		// function to shrink header
-		var shrinkHeader = 5;
+		// function to TRANSFORM HEADER
+		// var shrinkHeader = 100;
+		// $(window).scroll(function() {
+		//   var scroll = getCurrentScroll();
+	 //    if ( scroll >= shrinkHeader ) {
+  //       $('.category-hero-container').addClass('shrink');
+  //     }
+  //     else {
+  //       $('.category-hero-container').removeClass('shrink');
+  //     }
+		// });
+		// function getCurrentScroll() {
+		//   return window.pageYOffset || document.documentElement.scrollTop;
+		//  };
+
+		// FIXED NAV js
+		var  sn = $(".category-subnav");
+    sns = "category-subnav-scrolled";
+    hdr = $('header').height();
+    // hdrTotal = $('.category-hero').height() + $('.category-hero-text-container').height();
+
 		$(window).scroll(function() {
-		  var scroll = getCurrentScroll();
-	    if ( scroll >= shrinkHeader ) {
-        $('.category-hero-container').addClass('shrink');
-      }
-      else {
-        $('.category-hero-container').removeClass('shrink');
-      }
-		});
-		function getCurrentScroll() {
-		  return window.pageYOffset || document.documentElement.scrollTop;
+		  if( $(this).scrollTop() > hdr ) {
+		    sn.addClass(sns);
+		    $('.product-section').css('padding-top','50px');
+		  } else {
+		    sn.removeClass(sns);
+		    $('.product-section').css('padding-top','0');
 		  }
+		});
+
+
+		// using css media query to trigger mobile nav js
+		if ($('.js-media-query').css("float") === "none") {
+			$('.mobile-btn').click(function() {
+				$('.category-subnav ul').slideToggle(500);
+			});
+		};
+	
+		// function to remove carousel item based on window size
+    $(window).resize(function () {
+      if ( $(window).width() < 1025 && $(window).width() > 767) {
+        $('.product-carousel-row li.remove-item').remove();
+      };
+
+      // if ( $(window).width() < 1025 && $(window).width() > 767) {
+      //   $('.product-carousel-row-wbtn li:nth-child(4)').remove();
+      // }
+    });
+
+
+		// custom function for EQUAL HEIGHT COLUMNS
+		equalheight = function(container){
+
+		var currentTallest = 0,
+	     currentRowStart = 0,
+	     rowDivs = new Array(),
+	     $el,
+	     topPosition = 0;
+		 $(container).each(function() {
+
+		   $el = $(this);
+		   $($el).height('auto')
+		   topPostion = $el.position().top;
+
+		   if (currentRowStart != topPostion) {
+		     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+		       rowDivs[currentDiv].height(currentTallest);
+		     }
+		     rowDivs.length = 0; // empty the array
+		     currentRowStart = topPostion;
+		     currentTallest = $el.height();
+		     rowDivs.push($el);
+		   } else {
+		     rowDivs.push($el);
+		     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+		  }
+		   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+		     rowDivs[currentDiv].height(currentTallest);
+		   }
+		 });
+		}
+
+		$(window).load(function() {
+		  equalheight('.category-row-full-width .equal-columns');
+		});
+
+		$(window).resize(function(){
+		  equalheight('.category-row-full-width .equal-columns');
+		});			
+
+    // initialize foundation js
+    $(document).foundation();			
 
 			// OWL JS
 			$('.owl-carousel').owlCarousel({
@@ -925,7 +947,7 @@
 			          items:3
 			      },
 			      1024:{
-			          items:4
+			          items:3
 			      }
 			  }
 			});

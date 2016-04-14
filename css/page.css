@@ -3,15 +3,35 @@
 *------------------------------------*/
 body {
   background-color: #fff;
-  font-family: Helvetica, sans-serif;
+  font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
   padding: 0px;
   padding: 0px; }
+
+.js-media-query {
+  height: 1px;
+  width: 1px;
+  display: none;
+  float: left; }
+  @media only screen and (max-width: 1024px) {
+    .js-media-query {
+      display: block;
+      float: none; } }
 
 /*------------------------------------*
    $FOUNDATION OVERRIDES
 *------------------------------------*/
 .row {
   max-width: 75em; }
+
+@media only screen and (max-width: 768px) {
+  .full-width-768--push {
+    width: 100%;
+    left: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .full-width-768--pull {
+    width: 100%;
+    right: 0; } }
 
 /*------------------------------------*
    $FEATURE STORY MIXINS
@@ -56,13 +76,32 @@ body {
   width: 100%;
   position: relative; }
 
+.category-hero {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  background-image: url(../images/category-hero-test.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 500px;
+  z-index: 1;
+  width: 100%; }
+  @media only screen and (max-width: 768px) {
+    .category-hero {
+      position: relative;
+      height: 350px; } }
+
 .category-hero-container {
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  overflow: hidden; }
   .category-hero-container.shrink .category-hero {
-    height: 150px;
     transform: scale(1.5);
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
@@ -71,29 +110,8 @@ body {
     /* IE 9 */ }
   @media only screen and (min-width: 769px) {
     .category-hero-container.shrink .category-hero-text-container {
-      padding-bottom: 5%;
-      height: 150px; } }
-
-.category-hero {
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  background-image: url(../images/category-hero-test.jpg);
-  background-size: cover;
-  height: 500px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  z-index: 1;
-  width: 100%;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s; }
-  @media (max-width: 768px) {
-    .category-hero {
-      position: relative;
-      height: 350px; } }
+      padding-bottom: 15px;
+      height: 250px; } }
 
 .category-hero-text-container {
   -webkit-transform: translateZ(0);
@@ -113,13 +131,14 @@ body {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s; }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .category-hero-text-container {
       background-color: #000;
       position: relative;
       height: inherit; }
       .category-hero-text-container .category-hero-headline {
         font-size: 48px;
+        line-height: 1em;
         padding: 15px 0px; }
       .category-hero-text-container .category-hero-subhead {
         font-size: 18px;
@@ -133,6 +152,7 @@ body {
   font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
   font-size: 64px;
   font-weight: 800;
+  line-height: 1em;
   text-align: center;
   width: 100%;
   text-transform: uppercase;
@@ -141,6 +161,7 @@ body {
 .category-hero-subhead {
   color: #333;
   font-size: 24px;
+  line-height: 1em;
   text-align: center;
   text-transform: uppercase; }
 
@@ -150,12 +171,13 @@ body {
 
 .category-hero-button-container {
   margin-top: 15px; }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .category-hero-button-container {
       margin-top: 30px; } }
 
 a.category-shop-btn {
   color: #fff;
+  font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   border: 2px solid #fff;
@@ -174,15 +196,110 @@ a.category-shop-btn {
 /*------------------------------------*
    $CATEGORY SUBNAV
 *------------------------------------*/
-@media (max-width: 768px) {
-  .category-subnav-container {
-    padding-top: 15px; } }
+.category-subnav-container {
+  padding-top: 15px; }
+  @media only screen and (max-width: 768px) {
+    .category-subnav-container {
+      padding-top: 15px; } }
 
 .category-subnav {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
   height: 50px;
-  position: relative; }
+  position: relative;
+  background: none;
+  transition: all 0.25s ease; }
+  .category-subnav nav {
+    height: 100%;
+    z-index: 100;
+    width: 66%;
+    margin-left: 17%;
+    text-align: center; }
+    @media only screen and (max-width: 1280px) {
+      .category-subnav nav {
+        margin-left: 5%;
+        width: 90%; } }
+    @media only screen and (max-width: 1024px) {
+      .category-subnav nav {
+        margin-left: 0;
+        width: 100%; } }
+    .category-subnav nav ul {
+      display: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 100; }
+      .category-subnav nav ul li {
+        background: #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        display: block;
+        padding: 0.5em;
+        text-align: center;
+        color: #000;
+        transition: all 0.25s ease; }
+        .category-subnav nav ul li:first-of-type {
+          border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        .category-subnav nav ul li a {
+          color: inherit;
+          cursor: pointer;
+          font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
+          font-size: 0.8125em;
+          font-weight: 700;
+          text-decoration: none;
+          text-transform: uppercase; }
+        .category-subnav nav ul li:hover, .category-subnav nav ul li:active, .category-subnav nav ul li:focus, .category-subnav nav ul li.btn-find-shop {
+          background: #b90000;
+          color: #fff; }
+          .category-subnav nav ul li:hover a, .category-subnav nav ul li:active a, .category-subnav nav ul li:focus a, .category-subnav nav ul li.btn-find-shop a {
+            color: inherit; }
+
+@media screen and (min-width: 1025px) {
+  .category-subnav {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; }
+    .category-subnav nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+      .category-subnav nav ul li {
+        border-bottom: none;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto; }
+        .category-subnav nav ul li:first-of-type {
+          border-top: none; } }
+
+.category-subnav-scrolled {
+  background: white;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 999; }
+
+.mobile-btn {
+  width: 95%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+  display: none;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  background: #b90000;
+  padding: 0.5em 1em;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 4px; }
+  .mobile-btn a {
+    color: inherit; }
+  .mobile-btn img {
+    display: inline-block;
+    width: 19px;
+    margin-left: 10px;
+    margin-top: -1px; }
+  @media only screen and (max-width: 1024px) {
+    .mobile-btn {
+      display: inline-block;
+      width: 95%; } }
 
 /*------------------------------------*
    $PRODUCT GRID
@@ -190,16 +307,24 @@ a.category-shop-btn {
 .category-product-container {
   padding: 25px 15px; }
 
+li.shop-all-item {
+  padding-top: 5%; }
+  @media only screen and (max-width: 768px) {
+    li.shop-all-item {
+      padding-top: 10%; } }
+
 .category-product-carousel a.category-shop-btn {
+  font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
   padding: 15px 0px;
   background-color: #fff;
   color: #000;
   border-color: #000;
   font-size: 18px; }
   .category-product-carousel a.category-shop-btn:hover {
-    background-color: #000;
+    background-color: #b90000;
+    border-color: #b90000;
     color: #fff; }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .category-product-carousel a.category-shop-btn {
       background-color: #b90000;
       color: #fff;
@@ -233,15 +358,19 @@ a.category-shop-btn {
   text-align: center;
   color: #b90000;
   font-weight: 800;
+  font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
+  line-height: 1em;
   text-transform: uppercase; }
 
 .category-header-headline {
+  font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
   font-size: 48px;
   font-weight: 800;
+  line-height: 1em;
   color: #000;
   text-align: center;
   text-transform: uppercase; }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .category-header-headline {
       font-size: 40px; } }
 
@@ -325,7 +454,7 @@ a.category-shop-btn {
 *------------------------------------*/
 .category-feature-row {
   max-width: 1400px; }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .category-feature-row {
       position: relative; } }
 
@@ -376,26 +505,36 @@ a.category-shop-btn {
 
 .category-feature-copy-container {
   padding: 30px 60px; }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
+    .category-feature-copy-container {
+      padding: 30px 15px; } }
+  @media only screen and (max-width: 768px) {
     .category-feature-copy-container {
       text-align: center;
       padding: 15px 10px; } }
 
 .category-feature-subhead {
+  font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 1em;
   color: #fff; }
+  @media only screen and (max-width: 1024px) {
+    .category-feature-subhead {
+      font-size: 0.75em; } }
 
 .category-feature-headline {
+  font-family: "franklin-gothic-urw-cond", Helvetica, sans-serif;
   font-size: 48px;
   font-weight: 800;
+  line-height: 1em;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #fff; }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .category-feature-headline {
-      font-size: 40px; } }
+      font-size: 2.5em; } }
 
 .category-feature-copy {
   color: #fff;
@@ -415,7 +554,7 @@ a.category-shop-btn {
 
 .category-feature-button-container {
   margin-top: 45px; }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     .category-feature-button-container {
       margin-top: 15px; } }
 
