@@ -22,6 +22,8 @@ body {
 *------------------------------------*/
 .row {
   max-width: 75em; }
+  .row .row {
+    margin: 0; }
 
 @media only screen and (max-width: 768px) {
   .full-width-768--push {
