@@ -129,6 +129,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/category-silhouette-header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 166091,
+		"inputAbbreviatedPath": "\/images\/category-silhouette-header.png",
+		"outputAbbreviatedPath": "\/images\/category-silhouette-header.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/category-silhouette-hi.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 460474,
+		"inputAbbreviatedPath": "\/images\/category-silhouette-hi.png",
+		"outputAbbreviatedPath": "\/images\/category-silhouette-hi.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/category-silhouette-low.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 328459,
+		"inputAbbreviatedPath": "\/images\/category-silhouette-low.png",
+		"outputAbbreviatedPath": "\/images\/category-silhouette-low.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/category-silhouette-mid.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256530,
+		"inputAbbreviatedPath": "\/images\/category-silhouette-mid.png",
+		"outputAbbreviatedPath": "\/images\/category-silhouette-mid.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/category-silhouette-slip.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 194424,
+		"inputAbbreviatedPath": "\/images\/category-silhouette-slip.png",
+		"outputAbbreviatedPath": "\/images\/category-silhouette-slip.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/category-story-green.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -172,6 +227,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/js\/foundation.min.js": {
 		"fileType": 64,

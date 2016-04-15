@@ -19,8 +19,10 @@
 $category-row-width: 1400px;
 $breakpoint-tablet-hz: "only screen and (max-width : 1024px)";
 $breakpoint-tablet: "only screen and (max-width : 768px)";
+$breakpoint-mobile-only: "only screen and (max-width : 640px)";
 $breakpoint-mobile: 640px;
 $red: #b90000;
+
 
 // Fonts
 $base-font-size: 16px;
@@ -200,6 +202,12 @@ header {
 			margin-top:-5px;
 		}
 	}
+	@media #{$breakpoint-mobile-only} {
+		.category-hero-headline{
+			font-size:36px;
+			line-height:24px;
+		}
+	}
 }
 
 .category-hero-row{
@@ -233,8 +241,12 @@ header {
 
 .category-hero-button-container{
 	margin-top:15px;
+	margin-bottom:20px;
 	@media #{$breakpoint-tablet} {
 		margin-top:30px;
+	}
+	@media #{$breakpoint-mobile-only} {
+		margin-top:15px;
 	}
 }
 
@@ -246,6 +258,7 @@ a.category-shop-btn{
 	border:2px solid #fff;
 	background: rgba(0, 0, 0, 0.4);
 	box-shadow:none;
+	margin-bottom:0px;
 	&:hover{
 			background-color:#000;
 	border: 2px solid #000;
@@ -486,13 +499,15 @@ li.shop-all-item {
    $CATEGORY HEADERS
 *------------------------------------*/
 .category-header-row{
-	max-width:450px;
 	margin-bottom:15px;
+	overflow:hidden;
+	max-width:450px;
 }
 
 .category-header-subhead-row{
 	max-width:200px;
 	margin-top:15px;
+	overflow:hidden;
 }
 .category-header-subhead-line{
 	height:1px;
@@ -521,11 +536,17 @@ li.shop-all-item {
 	@media #{$breakpoint-tablet} {
 		font-size:40px;
 	}
+	@media #{$breakpoint-mobile-only} {
+		font-size:36px;
+	}
 }
 
 .category-header-copy{
 	text-align:center;
 	line-height:22px;
+		@media #{$breakpoint-mobile-only} {
+		font-size:15px;
+	}
 }
 
 /*------------------------------------*
@@ -633,6 +654,116 @@ li.shop-all-item {
 }
 
 
+
+
+
+
+/*------------------------------------*
+   $CATEGORY silhouette
+*------------------------------------*/
+
+.category-silhouette{
+	background-color:#333;
+	transition: all 0.5s ease;
+	.row{
+		max-width:$category-row-width;
+	}
+	&:hover{
+		background-color:#222;
+	transition: all 0.5s ease;
+	.category-silhouette-single-container{
+		border-right:1px solid #333;
+	}
+	}
+			@media #{$breakpoint-tablet-hz} {
+		background-color:#222;
+	}
+				@media #{$breakpoint-tablet} {
+		background-color:#222;
+	}
+}
+
+
+.category-silhouette-header{
+	padding-top:5%;
+		@media #{$breakpoint-tablet-hz} {
+		padding-top:10%;
+	}
+
+		@media #{$breakpoint-tablet} {
+		padding-top:13%;
+	}	
+		@media #{$breakpoint-mobile-only} {
+		padding:20px;
+			border-bottom:1px solid #333;
+
+	}		
+	
+}
+
+
+.category-silhouette-single-container{
+	border-right:1px solid #444;
+	transition: all 0.3s ease;
+	padding:15px 15px;
+	&:hover{
+		background-color:$red;
+		box-shadow: 0 0 25px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0 0 25px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 0 25px rgba(0,0,0,0.6);
+	-o-box-shadow: 0 0 25px rgba(0,0,0,0.6);
+	transition: all 0.3s ease;
+	border-right:1px solid #333;
+
+	}
+		@media #{$breakpoint-tablet} {
+		border-right:1px solid #333;
+	}
+		@media #{$breakpoint-tablet-hz} {
+		border-right:1px solid #333;
+	}
+			@media #{$breakpoint-mobile-only} {
+		border-bottom:1px solid #333;
+	}
+}
+
+.category-silhouette-single-title{
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+	font-family:$title-font;
+	font-weight:800;
+	font-size:24px;
+
+}
+
+.category-silhouette-single-image{
+	padding:15px;
+	transition: all 0.3s ease;
+	&:hover{
+
+	}
+	@media #{$breakpoint-tablet-hz} {
+		padding:10px;
+	}
+	@media #{$breakpoint-tablet} {
+		padding:5px;
+	}
+}
+
+.category-silhouette-single-subhead{
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	text-transform:uppercase;
+
+}
+
+
+
+
+
+
 /*------------------------------------*
    $FEATURED STORIES
 *------------------------------------*/
@@ -656,7 +787,6 @@ li.shop-all-item {
 	transition: all 0.5s ease;
 	display: flex;
 	align-items: center;
-	min-height:350px;
 	&:hover{
 		box-shadow: 0 0 25px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0 0 25px rgba(0,0,0,0.3);
@@ -743,17 +873,20 @@ li.shop-all-item {
 }
 
 .category-feature-image{
+	min-height:1px;
 	webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	// align-items: stretch;
-	min-height:350px;
 	background-position:top center;
 	transition: all 0.5s ease;
 	-webkit-filter: contrast(100%); /* Chrome, Safari, Opera */
 	  filter: contrast(100%);
 	height: 100%;
+	  	@media #{$breakpoint-mobile-only} {
+		max-height:250px;
+	}
 }
 
 .category-feature-button-container{
